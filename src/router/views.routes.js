@@ -10,13 +10,9 @@ viewsRouter.get("/", function (_,res) {
     res.sendFile(path.resolve("./public/views/home.html"))
 })
 
-
-
-
-
-
-
-
+viewsRouter.get("/login", function (_,res) {
+    res.sendFile(path.resolve("./public/views/login.html"))
+})
 
 
 module.exports = {
